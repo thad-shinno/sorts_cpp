@@ -20,7 +20,7 @@ After sorting, all elements on the left half of the pivot will be less than the 
 The pivot begins as the right end of the segment, while the compare and store begin on the left end of the segment.\
 While the compare index is left of the pivot index,
   - If the compare element is less than the pivot element, swap the store element with the compare element and increment the swap index once to the right.
-  - Then increment the compare index once to the right
+  - Then increment the compare index once to the right\
 When the compare index reaches the pivot index, swap the store element with the pivot element.\
 This swap makes it so all the elements on the left of the pivoted element are less than, while all the elements right of the pivoted element are greater than.\
 Recursively call the quick sort on the segment to the left of the pivoted element (do not include the pivoted element).\
